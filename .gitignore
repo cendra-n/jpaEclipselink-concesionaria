@@ -1,0 +1,15 @@
+# Ignorar archivos compilados
+/target/
+*.class
+
+# Configuraciones privadas de NetBeans
+/nbproject/private/
+/nbproject/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
