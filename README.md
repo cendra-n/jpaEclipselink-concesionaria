@@ -1,3 +1,4 @@
+
 # 🚗 Sistema de Gestión para Concesionaria - Proyecto Mejorado
 
 ## 📌 Descripción
@@ -25,8 +26,9 @@ El sistema incluye **tests automatizados con JUnit 5** que validan la lógica de
 - **Altas, bajas y modificaciones** en la base de datos.
 - **Búsquedas y validaciones de consistencia** de datos.
 - Control de errores comunes.
-  
-Los tests se encuentran en `src/test/java` y pueden ejecutarse desde NetBeans o con Maven.
+
+Los tests se encuentran en `src/test/java` y pueden ejecutarse desde NetBeans o con Maven.  
+Son fundamentales para garantizar que el sistema funcione correctamente incluso ante datos incompletos o erróneos.
 
 ### 📚 JavaDoc Completo
 Cada clase y método del proyecto está documentado con **JavaDoc**, facilitando su comprensión y mantenimiento.  
@@ -58,56 +60,50 @@ La documentación describe el propósito de cada clase, los parámetros esperado
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/cendra-n/ConcesionariaJpa.git
-Crear la base de datos en MySQL:
+   ```
 
-sql
-Copiar
-Editar
-CREATE DATABASE concesionaria;
-Configurar el archivo persistence.xml:
+2. Crear la base de datos en MySQL:
+   ```sql
+   CREATE DATABASE concesionaria;
+   ```
 
-xml
-Copiar
-Editar
-<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concesionaria"/>
-<property name="javax.persistence.jdbc.user" value="tu_usuario"/>
-<property name="javax.persistence.jdbc.password" value="tu_contraseña"/>
-Abrir el proyecto en NetBeans 22 como proyecto Maven.
+3. Configurar el archivo `persistence.xml`:
+   ```xml
+   <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concesionaria"/>
+   <property name="javax.persistence.jdbc.user" value="tu_usuario"/>
+   <property name="javax.persistence.jdbc.password" value="tu_contraseña"/>
+   ```
 
-▶️ Ejecución
-Ejecutar la clase principal Principal.java.
+4. Abrir el proyecto en **NetBeans 22** como proyecto Maven.
 
-Se abrirá la interfaz gráfica para gestionar los vehículos.
+## ▶️ Ejecución
 
-📚 Documentación
+1. Ejecutar la clase principal: `Principal.java`
+2. Se abrirá la interfaz gráfica para gestionar los vehículos.
+
+## 📚 Documentación
+
 El proyecto incluye:
 
-JavaDoc en todas las clases y métodos
+- **JavaDoc completo** en todas las clases y métodos
+- **Comentarios explicativos** en el código fuente
+- **Pruebas unitarias** que permiten validar el correcto funcionamiento del sistema
 
-Comentarios explicativos en el código fuente
+## ✨ Créditos
 
-Pruebas unitarias que permiten validar el correcto funcionamiento del sistema
+Este proyecto fue desarrollado a partir del ejercicio propuesto por **TodoCode Academy**, con las siguientes mejoras propias:
 
-✨ Créditos
-Este proyecto fue desarrollado a partir del ejercicio propuesto por TodoCode Academy, con las siguientes mejoras propias:
+- Filtro dinámico por patente
+- Resaltado visual de autos 0km
+- Pruebas unitarias con JUnit
+- Documentación profesional con JavaDoc
+- Interfaz gráfica clara y funcional
 
-Filtro dinámico por patente
+## 🆘 Soporte
 
-Resaltado visual de autos 0km
-
-Pruebas unitarias con JUnit
-
-Documentación profesional con JavaDoc
-
-Interfaz gráfica clara y funcional
-
-🆘 Soporte
 En caso de errores o problemas:
 
-Verificá que el servidor MySQL esté corriendo correctamente.
-
-Asegurate de tener NetBeans 22 y Java 21 instalados.
-
-Revisá que el persistence.xml tenga los datos correctos de conexión.
-
-Confirmá que el conector MySQL está correctamente agregado en las dependencias Maven.
+1. Verificá que el servidor **MySQL** esté corriendo correctamente.
+2. Asegurate de tener **NetBeans 22** y **Java 21** instalados.
+3. Revisá que el archivo `persistence.xml` tenga los datos correctos de conexión.
+4. Confirmá que el **conector MySQL** esté correctamente agregado en las dependencias Maven.
