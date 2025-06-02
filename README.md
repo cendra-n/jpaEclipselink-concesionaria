@@ -7,7 +7,7 @@ La consigna propone crear un inventario de autos que luego serán vendidos, dife
 
 Este proyecto implementa un CRUD básico utilizando **JPA con EclipseLink** como proveedor de persistencia, y conexión a base de datos **MySQL**.
 
-Además, se incorporaron **mejoras propias** como un filtro por patente, resaltado visual para autos 0km y pruebas unitarias.
+Además, se incorporaron **mejoras propias** como un filtro por patente, validaciones del formulario para crear y editar, resaltado visual para autos 0km y pruebas unitarias.
 
 ## 🚀 Características Mejoradas
 
@@ -51,7 +51,7 @@ La documentación describe el propósito de cada clase, los parámetros esperado
 1. **Java Development Kit 21**
 2. **NetBeans 22** (recomendado para soporte visual e imágenes)
 3. **MySQL Server** con:
-   - Base de datos llamada `concesionaria`
+   - Base de datos llamada `concesionariajpa`
    - Usuario con permisos adecuados (configurado en `persistence.xml`)
 4. **MySQL Connector/J 8.0.17** o superior
 
@@ -64,12 +64,12 @@ La documentación describe el propósito de cada clase, los parámetros esperado
 
 2. Crear la base de datos en MySQL:
    ```sql
-   CREATE DATABASE concesionaria;
+   CREATE DATABASE concesionariajpa;
    ```
 
 3. Configurar el archivo `persistence.xml`:
    ```xml
-   <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concesionaria"/>
+   <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concesionariajpa"/>
    <property name="javax.persistence.jdbc.user" value="tu_usuario"/>
    <property name="javax.persistence.jdbc.password" value="tu_contraseña"/>
    ```
@@ -78,7 +78,7 @@ La documentación describe el propósito de cada clase, los parámetros esperado
 
 ## ▶️ Ejecución
 
-1. Ejecutar la clase principal: `Principal.java`
+1. Ejecutar la clase principal: `ConcesionariaJpa.java` (ubicado en el package logica)
 2. Se abrirá la interfaz gráfica para gestionar los vehículos.
 
 ## 📚 Documentación
@@ -96,6 +96,7 @@ Este proyecto fue desarrollado a partir del ejercicio propuesto por **TodoCode A
 - Filtro dinámico por patente
 - Resaltado visual de autos 0km
 - Pruebas unitarias con JUnit
+- Validaciones de los campos del formularios que actuan correctamente tanto para el create como para update
 - Documentación profesional con JavaDoc
 - Interfaz gráfica clara y funcional
 
