@@ -88,7 +88,7 @@ El proyecto incluye:
 - **JavaDoc completo** en todas las clases y métodos
 - **Comentarios explicativos** en el código fuente
 - **Pruebas unitarias** que permiten validar el correcto funcionamiento del sistema
-
+- **Documentación extra generada con deepwiki
   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cendra-n/jpaEclipselink-concesionaria)
 
 ## ✨ Créditos
