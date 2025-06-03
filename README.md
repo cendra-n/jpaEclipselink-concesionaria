@@ -89,6 +89,8 @@ El proyecto incluye:
 - **Comentarios explicativos** en el código fuente
 - **Pruebas unitarias** que permiten validar el correcto funcionamiento del sistema
 
+  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cendra-n/jpaEclipselink-concesionaria)
+
 ## ✨ Créditos
 
 Este proyecto fue desarrollado a partir del ejercicio propuesto por **TodoCode Academy**, con las siguientes mejoras propias:
